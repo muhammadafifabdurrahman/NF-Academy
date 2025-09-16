@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: #f1f2f6;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #2d3436;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+    marquee img {
+      border-radius: 15px;
+      margin: 15px;
+      width: 300px;   /* 🔹 foto lebih besar */
+      height: auto;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    marquee img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  <h2>Gallery</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+    <img src="Gambar/WhatsApp Image 2025-09-07 at 21.10.34 (1).jpeg">
+    <img src="Gambar/WhatsApp Image 2025-09-07 at 21.10.34.jpeg">
+    <img src="Gambar/WhatsApp Image 2025-09-07 at 21.10.35 (1).jpeg">
+    <img src="Gambar/WhatsApp Image 2025-09-07 at 21.10.35 (2).jpeg">
+  </marquee>
+</body>
+</html>

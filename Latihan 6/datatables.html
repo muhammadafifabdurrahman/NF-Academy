@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>DataTable</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+  <h2>Data Mahasiswa</h2>
+  <table id="example" class="display">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Budi</td><td>0110222001</td><td>TI</td></tr>
+      <tr><td>Siti</td><td>0110222002</td><td>SI</td></tr>
+      <tr><td>Andi</td><td>0110222003</td><td>TI</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    $(document).ready(function(){
+      $('#example').DataTable();
+    });
+  </script>
+</body>
+</html>
