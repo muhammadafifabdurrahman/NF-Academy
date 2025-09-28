@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    
+    <!--Event Handler Inline-->
+    <button onclick="alert('tombol diklik')">Klik Saya</button>
+
+    <!--Even menggunakan Properti dan DOM-->
+    <button id="myButton">Klik DOM</button>
+
+    <script>
+        let button = document.getElementById("myButton");
+        // button.onclick = function (){
+        //     alert('tombol diklik');
+        // }
+        button.addEventListener("click", function(){
+            alert("tombol diklik");
+        });
+
+        button.addEventListener("click", function(){
+            console.log("Event Click dijalankan");
+        });
+    </script>
+
+</body>
+</html>
